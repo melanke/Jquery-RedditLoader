@@ -1,7 +1,7 @@
-# JQuery RedditLoader 2.1.1
+# JQuery RedditLoader 2.1.1 [Download](https://raw.github.com/melanke/Jquery-RedditLoader/master/src/jquery.redditloader-2.1.1.js)
 
 ## About
-Load images, Imgur Albuns, Youtube videos, and Articles (beta) of Reddit links, loading only when the previous content was loaded
+Load images, Imgur Albuns, Youtube videos, Texts and Links of Reddit Posts, loading only when the previous content was loaded
 
 ###Livedemo
 http://redditmobile.blogspot.com.br
@@ -26,7 +26,6 @@ $("#posts").redditloader({
 				skipText: true, //(beta - default is true) if you dont want to load articles (text)
 				minDelay: 2000, //mininum delay, in miliseconds, between loading posts (default is 1500)
 				maxImgurAlbumItens: -1, //only load album if it contains less itens than this attribute (-1 if you want to load it anyway. default is 5)
-				maxTextParagraphs: 5, //load the first x paragraphs
 
 				render: function(redditpost){
 					//here is an example for a custom render
@@ -46,6 +45,25 @@ $("#posts").redditloader({
 				},
 });
 ```
+
+##Optional full config by HTML element
+```html
+<div 
+        id='posts' 
+        data-subreddits='funny/todayilearned/wtf/adviceanimals'
+        data-redditSort='new'
+        data-skipNsfw='true'
+        data-skipGifs='true'
+        data-skipImgurAlbum='true'
+        data-skipYoutube='true'
+        minDelay='2000'
+        maxImgutAlbumItens='-1'>
+</div>
+```
+```javascript
+$("#posts").redditloader();
+```
+
 
 to know more about attributes to the render visit https://github.com/reddit/reddit/wiki/API%3A-info.json
 full list:
