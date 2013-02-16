@@ -1,7 +1,7 @@
-# JQuery RedditLoader 3.0 [Download](https://raw.github.com/melanke/Jquery-RedditLoader/master/src/jquery.redditloader-3.0.js)
+# JQuery RedditLoader 3.1 [Download](https://raw.github.com/melanke/Jquery-RedditLoader/master/src/jquery.redditloader-3.1.js)
 
 ## About
-Load images, Imgur Albuns, Youtube videos, Texts, Links and Comments of Reddit Posts, loading only when the previous content was loaded
+Load images (including from imgur and quickmeme links), Imgur Albuns, Youtube videos, Texts, Links and Comments of Reddit Posts, loading only when the previous content was loaded
 
 ###Livedemo
 http://redditmobile.blogspot.com.br
