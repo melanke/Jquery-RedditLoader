@@ -1,7 +1,7 @@
-# JQuery RedditLoader 2.1.1 [Download](https://raw.github.com/melanke/Jquery-RedditLoader/master/src/jquery.redditloader-2.1.1.js)
+# JQuery RedditLoader 3.0 [Download](https://raw.github.com/melanke/Jquery-RedditLoader/master/src/jquery.redditloader-3.0.js)
 
 ## About
-Load images, Imgur Albuns, Youtube videos, Texts and Links of Reddit Posts, loading only when the previous content was loaded
+Load images, Imgur Albuns, Youtube videos, Texts, Links and Comments of Reddit Posts, loading only when the previous content was loaded
 
 ###Livedemo
 http://redditmobile.blogspot.com.br
@@ -23,7 +23,9 @@ $("#posts").redditloader({
 				skipGifs: true, //if you dont want gifs
 				skipImgurAlbum: true, //if you dont want to load imgur albuns
 				skipYoutube: true, //if yout dont want to load youtube videos
-				skipText: true, //(beta - default is true) if you dont want to load articles (text)
+				skipText: true, //if you dont want to load text (default is false)
+                                skipPage: true, //if you dont want to load other links (default is false)
+                                skipComments: true, //if you dont want to load comments (default is false)
 				minDelay: 2000, //mininum delay, in miliseconds, between loading posts (default is 1500)
 				maxImgurAlbumItens: -1, //only load album if it contains less itens than this attribute (-1 if you want to load it anyway. default is 5)
 
@@ -56,6 +58,9 @@ $("#posts").redditloader({
         data-skipGifs='true'
         data-skipImgurAlbum='true'
         data-skipYoutube='true'
+        data-skipText='true'
+        data-skipPage='true'
+        data-skipComments='true'
         minDelay='2000'
         maxImgutAlbumItens='-1'>
 </div>
