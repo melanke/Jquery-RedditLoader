@@ -29,7 +29,7 @@ $("#posts").redditloader({
 				minDelay: 2000, //mininum delay, in miliseconds, between loading posts (default is 1500)
 				maxImgurAlbumItens: -1, //only load album if it contains less itens than this attribute (-1 if you want to load it anyway. default is 5)
 
-				render: function(redditpost){
+				render: function(data){
 					//here is an example for a custom render
 					if(data.youtube){
 						$(this).append("<h1><span class='subreddit'>"+data.subreddit+"</span>"+data.title+"</h1><iframe type='text/html' width='640' height='390' src='http://www.youtube.com/embed/"+data.youtube+"' frameborder='0'/><hr/>");
