@@ -4,7 +4,7 @@
 Load images (including from imgur and quickmeme links), Imgur Albuns, Youtube videos, Texts, Links and Comments of Reddit Posts, loading only when the previous content was loaded
 
 ###Livedemo
-http://redditmobile.blogspot.com.br
+http://m-reddit.com
 
 ###Dependencies
 * JQuery
